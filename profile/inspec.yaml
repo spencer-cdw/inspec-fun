@@ -1,0 +1,18 @@
+name: foobar
+title: inspec-fun
+maintainer: spencer
+copyright: CDW
+summary: profiles for golden images
+description: check all the things
+version: 0.1.0
+inspec_version: "~> 4.6.x"
+supports: 
+  - platform-family: ubuntu
+    release: 20.*
+  - platform-name: windows_server_2019*
+
+depends:
+- name: linux-baseline
+  url: https://github.com/dev-sec/linux-baseline/archive/master.tar.gz
+- name: ssh-baseline
+  url: https://github.com/dev-sec/ssh-baseline/archive/master.tar.gz
